@@ -1,0 +1,1 @@
+../sddm/sddm.conf.d/etc/sddm.conf.d
