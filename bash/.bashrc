@@ -7,7 +7,7 @@
 
 source ~/.bin/bash_functions.sh
 
-alias ls='lsd --color=auto'
+alias ls='lsd --color=auto --icon never'
 alias cat='bat'
 alias grep='grep --color=auto'
 alias vivaldi="vivaldi"
