@@ -13,6 +13,8 @@ alias grep='grep --color=auto'
 alias vivaldi="vivaldi"
 alias waybar-reload="pkill waybar && hyprctl dispatch exec waybar"
 PS1='[\u@\h \W]\$ '
+alias screenshot='~/.bin/screenshots.sh'
+alias img='qimgv'
 
 # Added by LM Studio CLI (lms)
 export PATH="$PATH:/home/Henry/.lmstudio/bin"
