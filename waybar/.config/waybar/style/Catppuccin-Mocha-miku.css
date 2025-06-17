@@ -33,12 +33,15 @@ window#waybar.hidden {
 /* This section can be use if you want to separate waybar modules */
 .modules-left, .modules-center, .modules-right {
 	background: @crust; /*mine*/ 
- 	border: 0px solid @overlay2; /*mine*/
+	border-width: 0px 2px 2px 2px;
+	border-color: #aa2222;
+	border-style: none solid solid solid;
+	border-radius: 8px; /*mine*/
 	padding-top: 1px; /*mine*/
 	padding-bottom: 1px; /*mine*/
 	padding-right: 2px;
 	padding-left: 2px;
-	border-radius: 4px; /*mine*/
+        margin: 0px 11px;
 } 
 
 /* mine
