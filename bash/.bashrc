@@ -15,6 +15,20 @@ alias waybar-reload="pkill waybar && hyprctl dispatch exec waybar"
 PS1='[\u@\h \W]\$ '
 alias screenshot='~/.bin/screenshots.sh'
 alias img='qimgv'
+# rmt.rs github
+alias rm='rmt'
+alias history='atuin history list'
 
 # Added by LM Studio CLI (lms)
 export PATH="$PATH:/home/Henry/.lmstudio/bin"
+unset -f ble/complete/auto-complete/source:atuin-history
+function ble/complete/auto-complete/source:atuin-history {
+        local suggestion
+        suggestion=$(atuin search --cmd-only --limit 1 --search-mode prefix -- "$_ble_edit_str")
+        [[ $suggestion == "$_ble_edit_str"?* ]] || return 1
+        ble/complete/auto-complete/enter h 0 "${suggestion:${#_ble_edit_str}}" '' "$suggestion"
+}
+. "$HOME/.atuin/bin/env"
+
+[[ -f ~/.bash-preexec.sh ]] && source ~/.bash-preexec.sh
+eval "$(atuin init bash)"
