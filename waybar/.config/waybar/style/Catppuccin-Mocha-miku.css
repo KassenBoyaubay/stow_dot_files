@@ -7,6 +7,7 @@ font-weight: bold;
 min-height: 0;
 /* set font-size to 100% if font scaling is set to 1.00 using nwg-look */
 font-size: 97%;
+font-size: 100%; /*mine*/
 font-feature-settings: '"zero", "ss01", "ss02", "ss03", "ss04", "ss05", "cv31"';
 padding: 1px;
 }
@@ -42,6 +43,7 @@ window#waybar.hidden {
 	padding-right: 2px;
 	padding-left: 2px;
         margin: 0px 11px;
+        margin: 0px 1px; /*mine*/
 } 
 
 /* mine
